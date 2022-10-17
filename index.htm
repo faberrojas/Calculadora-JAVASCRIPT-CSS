@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HTML</title>
+    <script src="./index.js" defer></script>
+    <style>
+
+        body{
+            background: url(fondo1.jpg); 
+             background-size: 100% 100%;
+             background-repeat: no-repeat;
+             margin: 0;
+             
+            height: 100vh;
+            font-family: sans-serif;
+            text-align: center;
+            
+        }
+
+input{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div#general{
+    background: url(fondo2.jpg); 
+    background-size: 100% 100%;
+             background-repeat: no-repeat;
+             margin: 0;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    background-color: gray;
+    border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+     
+    
+}
+div#espacio{
+    margin: auto;
+    width: 100px;
+    height: 130px;
+    
+}
+@font-face {
+    font-family: CloisterBlack; 
+    src: url(CloisterBlack.ttf);
+}
+#calcu{
+    font-family: CloisterBlack; 
+    font-size: 70px;
+    color: white;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+#casillas{
+    font-size: 40px;
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="espacio">
+
+    </div>
+    
+    <div id="general">
+        <br>
+    <h1 id="calcu"> Calculadora</h1>
+    <br>
+    <br>
+    <br>
+    <div id="casillas">
+<form action="" method="dialog">
+    <input type="text" id="op1" placeholder="Operador 1" style="font-size: 20px;">
+    <input type="text" id="operacion" placeholder="+, -, *, /" style="font-size: 20px;">
+    <input type="text" id="op2" placeholder="operador 2" style="font-size: 20px;">
+    <input type="submit" value="calcular" id="calcular" style="font-size: 20px;">
+</form>
+</div>
+
+    <p id="resultado" style="font-size: white;"> </p>
+</div>
+</body>
+</html>
